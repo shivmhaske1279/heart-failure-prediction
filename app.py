@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 
 # Load the pre-trained Logistic Regression model
 MODEL_PATH = "logistic_pkl.pkl"
